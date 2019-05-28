@@ -1,0 +1,24 @@
+<!--pages/user/users.wxml-->
+<view class='container'>
+
+  <!--顶部的头像、微信昵称、简介-->
+  <view class="info">
+
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+
+    <block wx:else>
+      <image class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="nickname">{{userInfo.nickName}}</text>
+      <text class='motto'> 爱成电，爱生活 </text>
+    </block>
+
+  </view>
+
+  <navigator class="div" url="{{item.url}}" open-type="navigate" wx:for="{{div}}">
+
+    <image class='icon' src='{{item.src}}'></image>
+    <text class='text'>{{item.text}}</text>
+    <image class='icon' src='./img/rightArrow.svg'></image>
+    
+  </navigator>
+</view>

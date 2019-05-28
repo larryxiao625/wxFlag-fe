@@ -1,0 +1,12 @@
+<!--pages/user/settings/settings.wxml-->
+
+<view class='container'>
+
+  <text>ID</text>
+  <input class='input' value='不超过10个字符' maxlength='10'></input>
+  <text>修改</text>
+  <text>个性签名：</text>
+  <input class='input' value='支持多行输入' maxlength='-1'></input>
+  
+</view>
+

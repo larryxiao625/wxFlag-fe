@@ -1,0 +1,19 @@
+<!--pages/ranks/ranks.wxml-->
+<view class='container'>
+
+  <view class='top3'>
+    <view class='{{item.divClass}}' wx:for="{{top3}}">
+      <image class="topAvatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="{{item.nikClass}}">{{userInfo.nickName}}</text>
+      <text class='{{item.dayClass}}'>{{item.day}}天</text>
+    </view>
+  </view>
+
+  <view class='top10' wx:for="{{top10}}">
+    <view class='otherRank'>{{item.rank}}</view>
+    <image class="otherAvatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view class='otherNik'>{{userInfo.nickName}}</view>
+    <view class='otherDay'>{{item.day}}天</view>
+  </view>
+
+</view>

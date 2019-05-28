@@ -1,0 +1,5 @@
+/* pages/user/settings/settings.wxss */
+
+.input {
+  border: 1px solid #dddddd;
+}

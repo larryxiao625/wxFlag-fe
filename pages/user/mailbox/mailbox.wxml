@@ -1,0 +1,13 @@
+<!--pages/user/mailbox/mailbox.wxml-->
+
+<view class='container'>
+  <view class='div' wx:for="{{email}}">
+    <view class='left'>
+      <text class=''>From {{item.sender}}</text>
+      <text class=''>{{item.brief}}</text>
+    </view>
+    <view class='right'>
+      <text class=''>已回复</text>
+    </view>
+  </view>
+</view>

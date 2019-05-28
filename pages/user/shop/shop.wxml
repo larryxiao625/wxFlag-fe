@@ -1,0 +1,19 @@
+<!--pages/user/shop/shop.wxml-->
+<view class='container'>
+
+  <image class='headPic' src='{{coinSrc}}'></image>
+  <text class='headText'>金币数：{{coin}}枚</text>
+
+  <view class='mainDiv' wx:for="{{goods}}">
+    <view class='leftDiv'>
+      <image class='icon' src='{{item.src}}'></image>
+      <text class='mainText'>{{item.name}}</text>
+      <text class='mainText'>{{item.price}}金</text>
+    </view>
+    <view class='rightDiv'>
+      <text class='buy'>购买</text>
+      <text class='viceText'>已有{{item.inventory}}张</text>
+    </view>
+  </view>
+
+</view>

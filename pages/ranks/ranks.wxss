@@ -1,0 +1,181 @@
+/* pages/ranks/ranks.wxss */
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  color: #222222;
+}
+
+.top3 {
+  height: 400rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.first {
+  height: 97.5%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f76360;
+  margin: 0 20rpx 0 20rpx;
+  border-radius: 48rpx 48rpx 0 0;
+}
+
+.second {
+  height: 90%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ffaf1b;
+  margin: 0 20rpx 0 20rpx;
+  border-radius: 48rpx 48rpx 0 0;
+}
+
+.third {
+  height: 82.5%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #3d9ed0;
+  margin: 0 20rpx 0 20rpx;
+  border-radius: 48rpx 48rpx 0 0;
+}
+
+.topAvatar {
+  width: 108rpx;
+  height: 108rpx;
+  border-radius: 50%;
+  margin: 20rpx 0 20rpx 0;
+}
+
+.firstNik {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30rpx;
+  margin: 40rpx 0 20rpx 0;
+}
+
+.secondNik {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30rpx;
+  margin: 30rpx 0 20rpx 0;
+}
+
+.thirdNik {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30rpx;
+  margin: 20rpx 0 20rpx 0;
+}
+
+.firstDay {
+  color: #000000;
+  font-size: 30rpx;
+  text-align: center;
+  margin: 40rpx 0 20rpx 0;
+}
+
+.secondDay {
+  color: #000000;
+  font-size: 30rpx;
+  text-align: center;
+  margin: 30rpx 0 20rpx 0;
+}
+
+.thirdDay {
+  color: #000000;
+  font-size: 30rpx;
+  text-align: center;
+  margin: 20rpx 0 20rpx 0;
+}
+
+.top10 {
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px #dddddd solid;
+}
+
+.otherAvatar {
+  height: 96rpx;
+  width: 96rpx;
+  border-radius: 50%;
+}
+
+.otherRank {
+  width: 5%;
+  color: #000000;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.otherNik {
+  width: 30%;
+  color: #000000;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.otherDay {
+  width: 12%;
+  color: #000000;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+/*
+.top10 {
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px #dddddd solid;
+}
+
+.otherAvatar {
+  height: 96rpx;
+  width: 96rpx;
+  border-radius: 50%;
+}
+
+.otherRank {
+  width: 10%;
+  color: #000000;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.otherNik {
+  width: 25%;
+  color: #000000;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.otherDay {
+  width: 15%;
+  color: #000000;
+  text-align: center;
+  font-size: 30rpx;
+}
+*/

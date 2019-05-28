@@ -1,0 +1,76 @@
+/* pages/user/shop/shop.wxss */
+
+.headPic {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.headText {
+  color: #000000;
+  font-size: 48rpx;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 100rpx 0;
+}
+
+.mainDiv {
+  height: 110rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px slategrey solid;
+}
+
+.leftDiv {
+  height: 100%;
+  width: 64%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  width: 30%;
+  height: 50%;
+}
+
+.mainText {
+  width: 32%;
+  color: #000000;
+  font-size: 36rpx;
+  font-weight: 400;
+  text-align: center;
+}
+
+.rightDiv {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buy {
+  background-color: #65ca00;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 400;
+  height: 40%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+}
+
+.viceText{
+  color: #888888;
+  font-size: 30rpx;
+  text-align: center;
+  font-weight: 400;
+}

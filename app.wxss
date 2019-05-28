@@ -1,0 +1,18 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  color: #222222;
+  padding: 30rpx 0 0 0;
+}
+
+/*
+绿色：#65ca00;
+黄色：#ffaf1b;
+红色：#f76360;
+蓝色：#3d9ed0;
+*/

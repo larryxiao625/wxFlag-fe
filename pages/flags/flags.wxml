@@ -1,0 +1,17 @@
+<!--pages/flags/flags.wxml-->
+<view class="container">
+
+  <navigator class="div" url="./{{item.status}}?id={{item.id}}&name={{item.name}}&progress={{item.progress}}" open-type="navigate" wx:for="{{flags}}">
+    <view class='left'>
+      <text class='mainHead'>15天{{item.name}}Flag</text>
+      <text class='viceHead' wx:if="{{item.progress}}">已完成 {{item.progress}} / 15</text>
+      <text class='viceHead' wx:else>未加入</text>
+    </view>
+    <view class='right'>
+      <text class='{{item.status}}' wx:if="{{item.status === 'todo'}}">未打卡</text>
+      <text class='{{item.status}}' wx:elif="{{item.status === 'done'}}">已打卡</text>
+      <text class='{{item.status}}' wx:elif="{{item.status === 'join'}}">参加</text>
+    </view>
+  </navigator>
+
+</view>

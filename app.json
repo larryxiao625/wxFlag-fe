@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/flags/flags",
+    "pages/ranks/ranks",
+    "pages/user/user",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/mailbox/mailbox",
+    "pages/user/shop/shop",
+    "pages/user/settings/settings",
+    "pages/flags/todo",
+    "pages/flags/done",
+    "pages/flags/join"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "当代大学生Flag日常（Beta）",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#4f4e4b",
+    "selectedColor": "#ffffff",
+    "backgroundColor": "#dddddd",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/flags/flags",
+        "text": "FLAG",
+        "iconPath": "images/tabBar/flag.png",
+        "selectedIconPath": "images/tabBar/flagSel.png"
+      },
+      {
+        "pagePath": "pages/ranks/ranks",
+        "text": "排行榜",
+        "iconPath": "images/tabBar/rank.png",
+        "selectedIconPath": "images/tabBar/rankSel.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/tabBar/user.png",
+        "selectedIconPath": "images/tabBar/userSel.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

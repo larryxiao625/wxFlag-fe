@@ -1,0 +1,100 @@
+/* pages/flags/flags.wxss */
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  color: #222222;
+  padding: 10rpx 0 0 0;
+}
+
+.div {
+  height: 160rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dddddd;
+}
+
+.left {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 5rpx 0 5rpx 40rpx;
+}
+
+.mainHead {
+  text-align: center;
+  font-size: 40rpx;
+  margin: 0 0 20rpx 0;
+}
+
+.viceHead {
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.right {
+  height: 100%;
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo {
+  width: 60%;
+  position: relative;
+  right: 30rpx;
+  background-color: #65ca00;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 400;
+  border-radius: 36rpx;
+}
+
+.done {
+  width: 60%;
+  position: relative;
+  right: 30rpx;
+  background-color: #ffaf1b;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 400;
+  border-radius: 36rpx;
+}
+
+.join {
+  width: 60%;
+  position: relative;
+  right: 30rpx;
+  background-color: #f76360;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: 400;
+  border-radius: 36rpx;
+}
+
+.unconfirmed {
+  width: 80%;
+  position: relative;
+  right: 30rpx;
+  background-color: #3d9ed0;
+  padding: 10rpx 10rpx 10rpx 10rpx;
+  text-align: center;
+  font-size: 42rpx;
+  font-weight: 400;
+  border-radius: 36rpx;
+}
