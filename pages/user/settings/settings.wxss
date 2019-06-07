@@ -1,5 +1,13 @@
-/* pages/user/settings/settings.wxss */
+.weui-cells__title {
+  margin-top: 0.77em;
+  margin-bottom: 0.3em;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #999;
+  font-size: 14px;
+}
 
-.input {
-  border: 1px solid #dddddd;
+.change-info{
+  display: block;
+  margin-top: 50rpx;
 }

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    date: ""
   },
 
   /**
@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  bindDateChange: function (e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
 })
