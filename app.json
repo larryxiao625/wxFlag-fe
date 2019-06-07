@@ -15,32 +15,28 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "当代大学生Flag日常（Beta）",
+    "navigationBarTitleText": "当代大学生Flag日常",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#4f4e4b",
-    "selectedColor": "#ffffff",
-    "backgroundColor": "#dddddd",
-    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/flags/flags",
         "text": "FLAG",
         "iconPath": "images/tabBar/flag.png",
-        "selectedIconPath": "images/tabBar/flagSel.png"
+        "selectedIconPath": "images/tabBar/flag-selected.png"
       },
       {
         "pagePath": "pages/ranks/ranks",
         "text": "排行榜",
         "iconPath": "images/tabBar/rank.png",
-        "selectedIconPath": "images/tabBar/rankSel.png"
+        "selectedIconPath": "images/tabBar/rank-selected.png"
       },
       {
         "pagePath": "pages/user/user",
         "text": "我的",
-        "iconPath": "images/tabBar/user.png",
-        "selectedIconPath": "images/tabBar/userSel.png"
+        "iconPath": "images/tabBar/me.png",
+        "selectedIconPath": "images/tabBar/me-selected.png"
       }
     ]
   },
