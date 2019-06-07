@@ -7,9 +7,9 @@
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
 
     <block wx:else>
-      <image class="avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="nickname">{{userInfo.nickName}}</text>
-      <text class='motto'> 爱成电，爱生活 </text>
+      <!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+      <open-data type="userAvatarUrl"></open-data>
+      <open-data type="userNickName"></open-data>
     </block>
 
   </view>
