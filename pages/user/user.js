@@ -36,11 +36,45 @@ Page({
       success: res => {
         console.log(res);
         app.globalData.userInfo = res.userInfo
+        app.globalData.hasUserInfo = true
         this.setData({
           userInfo: res.userInfo,
           hasUserInfo: true
+        });
+        wx.cloud.callFunction({
+          name: "login",
+          data: {},
+          success: res => {
+            console.log("login调用成功" + res.result.openid);
+            wx.request({
+              url: 'http://localhost:7001/api/v1/users/login',
+              method: 'POST',
+              data: {
+                'openid': res.result.openid,
+                'userName': app.globalData.userInfo.nickName
+              },
+              success: res => {
+                console.log(res);
+                wx.downloadFile({
+                  url: app.globalData.userInfo.userInfo.avatarUrl,
+                  success: res => {
+                    if (res.statusCode === 200) {
+                      wx.uploadFile({
+                        url: 'http://localhost:7001/api/v1/users/uploadAvatar',
+                        filePath: res.tempFilePath,
+                        name: app.globalData.openid+".jpeg",
+                      })
+                    }
+                  }
+                })
+              },
+              fail: res => {
+                console.log(res)
+              }
+            })
+          }
         })
-      },
+      }
     })
   },
 
@@ -98,11 +132,32 @@ Page({
   getUserInfo: function(e) {
     wx.getUserInfo({
       success: res => {
-        console.log(res);
         app.globalData.userInfo = res.userInfo
+        app.globalData.hasUserInfo = true
         this.setData({
           userInfo: res.userInfo,
           hasUserInfo: true
+        });
+        wx.cloud.callFunction({
+          name: "login",
+          data: {},
+          success: res => {
+            console.log("login调用成功" + res.result.openid);
+            wx.request({
+              url: 'http://localhost:7001/api/v1/users/login',
+              method: 'POST',
+              data: {
+                'openid': res.result.openid,
+                'userName': app.globalData.userInfo.nickName
+              },
+              success: res => {
+                console.log(res)
+              },
+              fail: res => {
+                console.log(res)
+              }
+            })
+          }
         })
       },
       fail: res => {
