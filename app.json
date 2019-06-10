@@ -7,10 +7,7 @@
     "pages/logs/logs",
     "pages/user/mailbox/mailbox",
     "pages/user/shop/shop",
-    "pages/user/settings/settings",
-    "pages/flags/todo",
-    "pages/flags/done",
-    "pages/flags/join"
+    "pages/user/settings/settings"
   ],
   "window": {
     "backgroundTextStyle": "light",

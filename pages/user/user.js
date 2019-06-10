@@ -46,6 +46,8 @@ Page({
           data: {},
           success: res => {
             console.log("login调用成功" + res.result.openid);
+            app.globalData.openid=res.result.openid
+            console.log(app.globalData.openid);
             wx.request({
               url: 'http://localhost:7001/api/v1/users/login',
               method: 'POST',
@@ -56,13 +58,16 @@ Page({
               success: res => {
                 console.log(res);
                 wx.downloadFile({
-                  url: app.globalData.userInfo.userInfo.avatarUrl,
+                  url: app.globalData.userInfo.avatarUrl,
                   success: res => {
                     if (res.statusCode === 200) {
                       wx.uploadFile({
                         url: 'http://localhost:7001/api/v1/users/uploadAvatar',
                         filePath: res.tempFilePath,
                         name: app.globalData.openid+".jpeg",
+                        formData: {
+                          'openid': app.globalData.openid
+                        }
                       })
                     }
                   }
@@ -143,6 +148,8 @@ Page({
           data: {},
           success: res => {
             console.log("login调用成功" + res.result.openid);
+            app.globalData.openid = res.result.openid
+            console.log(app.globalData.openid);
             wx.request({
               url: 'http://localhost:7001/api/v1/users/login',
               method: 'POST',
@@ -151,7 +158,22 @@ Page({
                 'userName': app.globalData.userInfo.nickName
               },
               success: res => {
-                console.log(res)
+                console.log(res);
+                wx.downloadFile({
+                  url: app.globalData.userInfo.avatarUrl,
+                  success: res => {
+                    if (res.statusCode === 200) {
+                      wx.uploadFile({
+                        url: 'http://localhost:7001/api/v1/users/uploadAvatar',
+                        filePath: res.tempFilePath,
+                        name: app.globalData.openid + ".jpeg",
+                        formData:{
+                          'openid': app.globalData.openid
+                        }
+                      })
+                    }
+                  }
+                })
               },
               fail: res => {
                 console.log(res)
