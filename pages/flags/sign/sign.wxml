@@ -1,2 +1,20 @@
 <!--pages/flags/sign/sign.wxml-->
-<text>pages/flags/sign/sign.wxml</text>
+<view class='container'>
+  <view class='input-box'>
+    <textarea placeholder='说说今天的感想和收获吧........' class='input-text-box'></textarea>
+    <view class='choose-image'>
+      <block wx:if='{{imageData}}'>
+        <view class='image-show'>
+          <image src='../../../images/camera.png'></image>
+        </view>
+      </block>
+      <view class='image-show'>
+        <image src='../../../images/camera.png' style='width:100rpx;height:100rpx;position:relative;top:50%;left:50%;translate: -50% -50%;display:flex' mode='scaleToFill'></image>
+      </view>
+    </view>
+  </view>
+  <view class='diveder'></view>
+  <view class='submit-button'>
+    <text>提交</text>
+  </view>
+</view>
