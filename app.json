@@ -8,10 +8,9 @@
     "pages/user/mailbox/mailbox",
     "pages/user/shop/shop",
     "pages/user/settings/settings",
-    "pages/flags/join/join",
-    "pages/flags/todo/todo",
-    "pages/flags/done/done",
-    "pages/dynamic/dynamic"
+    "pages/dynamic/dynamic",
+    "pages/flags/detail/detail",
+    "pages/flags/sign/sign"
   ],
   "window": {
     "backgroundTextStyle": "light",

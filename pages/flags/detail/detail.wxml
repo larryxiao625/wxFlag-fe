@@ -1,0 +1,39 @@
+<!--pages/flags/detail/detail.wxml-->
+<view class='container'>
+  <scroll-view style='flex-grow:1'>
+    <view class='head'>
+      <view class='button-and-pic'>
+        <image class='title-pic' src='../../../images/test.jpg' mode='scaleToFill'></image>
+        <view class='introduction'>
+          <text class='title-text'>test</text>
+          <view class='all-button'>
+            <view class='join-button'>
+              <text>加入</text>
+            </view>
+            <view class='share-button'>
+              <image src='../../../images/weixin.png' mode='aspectFit' class='share-pic'></image>
+              <text style='join-share-text'>分享</text>
+            </view>
+          </view>
+      </view>
+      </view>
+      <view class='introduction-view'>
+        <view class='introduction-border'>
+          <view class='community-text'>
+            <image src='../../../images/information.png' style='width:46rpx;height:46rpx'></image>
+            <text style='color:#ffffff;font-size:12px;margin-top:0;margin-bottom:0'>圈子简介</text>
+          </view>
+          <view class='intrduction-detail' style='margin-left:12rpx;overflow:hidden'>
+            <text style='color:#ffffff;font-size:12px;line-height:5px;word-wrap:break-word;'>aaaabbbbbbbbbbaaaaaaaaabadsadsadasfafdfdafdafdafdddddddddddddddddddddddddddd</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='detail'>
+
+    </view>
+  </scroll-view>
+  <view class='floating-button'>
+    <image src='../../../images/sign.png' mode='scaleToFill' style='width:16px;height:16px;position:absolute;top:50%;left:50%;translate:-50% -50%'></image>
+  </view>
+</view>
