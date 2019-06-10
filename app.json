@@ -10,7 +10,8 @@
     "pages/user/settings/settings",
     "pages/flags/join/join",
     "pages/flags/todo/todo",
-    "pages/flags/done/done"
+    "pages/flags/done/done",
+    "pages/dynamic/dynamic"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,6 +26,12 @@
         "text": "FLAG",
         "iconPath": "images/tabBar/flag.png",
         "selectedIconPath": "images/tabBar/flag-selected.png"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "text": "动态",
+        "iconPath": "images/tabBar/dynamic.png",
+        "selectedIconPath": "images/tabBar/dynamic-sel.png"
       },
       {
         "pagePath": "pages/ranks/ranks",

@@ -3,7 +3,7 @@
 
   <view class='top'>
     <button class='topLeft'>
-      <image style="height: 60rpx; width: 60rpx;" src='./img/checkIn_Plus.svg'></image>
+      <image style="height: 60rpx; width: 60rpx;" src='../img/checkIn_Plus.svg'></image>
       <text style='font-size: 30rpx'>上传照片</text>
     </button>
     <view class='topRight'>
