@@ -56,20 +56,20 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    var that=this;
+    var that = this;
     wx.request({
       url: 'http://localhost:7001/api/v1/flag/getAll',
       method: 'POST',
-      data:{
+      data: {
         openid: app.globalData.openid
       },
-      success(res){
+      success(res) {
         console.log(res);
         that.setData({
-          flags: res.data.errmsg.allFlag
+          flags: res.data.errmsg
         })
       }
-    })
+    }) 
   },
 
   /**
