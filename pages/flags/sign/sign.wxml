@@ -1,20 +1,18 @@
 <!--pages/flags/sign/sign.wxml-->
 <view class='container'>
   <view class='input-box'>
-    <textarea placeholder='说说今天的感想和收获吧........' class='input-text-box'></textarea>
+    <textarea placeholder='说说今天的感想和收获吧........' class='input-text-box' bindblur='setComments'></textarea>
     <view class='choose-image'>
-      <block wx:if='{{imageData}}'>
-        <view class='image-show'>
-          <image src='../../../images/camera.png'></image>
-        </view>
-      </block>
-      <view class='image-show'>
+      <view class='image-show' wx:for="{{imgPath}}">
+        <image src='{{item}}' style='height:200rpx;width:200rpx;' mode='aspectFill' bindtap='removeImg' data-index='{{index}}'></image>
+      </view>
+      <view class='image-show' bindtap='chooseImg' wx:if='{{imgPath.length!=9}}' >
         <image src='../../../images/camera.png' style='width:100rpx;height:100rpx;position:relative;top:50%;left:50%;translate: -50% -50%;display:flex' mode='scaleToFill'></image>
       </view>
     </view>
   </view>
   <view class='diveder'></view>
-  <view class='submit-button'>
+  <view class='submit-button' bindtap='submit'>
     <text>提交</text>
   </view>
 </view>
