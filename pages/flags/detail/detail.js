@@ -5,14 +5,21 @@ Page({
    * Page initial data
    */
   data: {
-
+    UID: "",
+    name: "",
+    progress: "",
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    console.log(options);
+    this.setData({
+      UID: options.id,
+      name: options.name,
+      progress: options.progress
+    })
   },
 
   /**
@@ -62,5 +69,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  submit: function(){
+    wx.navigateTo({
+      url: '../sign/sign?UID='+this.data.UID,
+    })
   }
 })

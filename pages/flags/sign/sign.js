@@ -9,14 +9,18 @@ Page({
   data: {
     imgPath: [],
     imgBase64: [],
-    comment: ""
+    comment: "",
+    UID: ""
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    console.log(options);
+    this.setData({
+      UID: options.UID
+    })
   },
 
   /**
