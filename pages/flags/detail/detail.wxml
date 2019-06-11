@@ -7,7 +7,7 @@
         <view class='introduction'>
           <text class='title-text'>test</text>
           <view class='all-button'>
-            <view class='join-button' wx:if='{{isSignToday=="null"}}'>
+            <view class='join-button' wx:if='{{isSignToday=="null"}}' bindtap='join'>
               <text>加入</text>
             </view>
             <view class='share-button'>

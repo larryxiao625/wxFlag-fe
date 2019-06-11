@@ -1,4 +1,5 @@
 // pages/flags/detail/detail.js
+const app=getApp();
 Page({
 
   /**
@@ -111,6 +112,24 @@ Page({
   submit: function(){
     wx.navigateTo({
       url: '../sign/sign?UID='+this.data.UID,
+    })
+  },
+  join: function(){
+    var that=this;
+    wx.request({
+      url: 'http://localhost:7001/api/v1/flag/join',
+      method: 'POST',
+      data: {
+        UID: that.data.UID,
+        openid: app.globalData.openid
+      },
+      success: res=>{
+        if(res.data.errcode===0){
+          that.setData({
+            isSignToday: 'todo'
+          })
+        }
+      }
     })
   }
 })
