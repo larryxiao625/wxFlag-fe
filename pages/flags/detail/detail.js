@@ -8,6 +8,8 @@ Page({
     UID: "",
     name: "",
     progress: "",
+    isSignToday: "",
+    description: ""
   },
 
   /**
@@ -18,8 +20,11 @@ Page({
     this.setData({
       UID: options.id,
       name: options.name,
-      progress: options.progress
+      progress: options.progress,
+      isSignToday: options.status,
+      description: options.description
     })
+    console.log(this.data)
   },
 
   /**

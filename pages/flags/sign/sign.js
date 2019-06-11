@@ -154,10 +154,13 @@ Page({
             method: 'POST',
             data:{
               openid: app.globalData.openid,
-              'UID': that.data.UID,
+              UID: that.data.UID,
               pic: JSON.stringify(that.data.imgBase64),
               comment: that.data.comment
             }
+          });
+          wx.navigateBack({
+            delta: 1
           })
         }
       }

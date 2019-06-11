@@ -7,7 +7,7 @@
         <view class='introduction'>
           <text class='title-text'>test</text>
           <view class='all-button'>
-            <view class='join-button'>
+            <view class='join-button' wx:if='{{isSignToday=="null"}}'>
               <text>加入</text>
             </view>
             <view class='share-button'>
@@ -24,13 +24,16 @@
             <text style='color:#ffffff;font-size:12px;margin-top:0;margin-bottom:0'>圈子简介</text>
           </view>
           <view class='intrduction-detail' style='margin-left:12rpx;overflow:hidden'>
-            <text style='color:#ffffff;font-size:12px;line-height:5px;word-wrap:break-word;'>aaaabbbbbbbbbbaaaaaaaaabadsadsadasfafdfdafdafdafdddddddddddddddddddddddddddd</text>
+            <text style='color:#ffffff;font-size:12px;line-height:5px;word-wrap:break-word;'>{{description}}</text>
           </view>
         </view>
       </view>
     </view>
     <view class='detail'>
-
+      <block wx:for='{{dynamic}}'>
+        <view class=''>
+        </view>
+      </block>
     </view>
   </scroll-view>
   <view class='floating-button'>

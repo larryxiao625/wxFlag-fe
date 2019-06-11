@@ -1,7 +1,7 @@
 <!--pages/flags/flags.wxml-->
 <view class="container">
 
-  <navigator class="div" url="./detail/detail?id={{item.UID}}&name={{item.name}}&progress={{item.signDay}}" open-type="navigate" wx:for="{{flags}}">
+  <navigator class="div" url="./detail/detail?id={{item.UID}}&name={{item.name}}&progress={{item.signDay}}&status={{item.isSignToday}}&description={{item.description}}" open-type="navigate" wx:for="{{flags}}">
     <view class='left'>
       <text class='mainHead'>15天{{item.name}}Flag</text>
       <text class='viceHead' wx:if="{{item.isSignToday!=NULL}}">已完成 {{item.signDay}} / 15</text>
