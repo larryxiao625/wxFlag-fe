@@ -48,7 +48,7 @@
       </block>
     </view>
   </scroll-view>
-  <view class='floating-button'>
-    <image src='../../../images/sign.png' mode='scaleToFill' style='width:16px;height:16px;position:absolute;top:50%;left:50%;translate:-50% -50%' bindtap='submit'></image>
+  <view class='floating-button' bindtap='{{isSignToday=="done" ? "none":"submit"}}'>
+    <image src='../../../images/sign.png' mode='scaleToFill' style='width:16px;height:16px;position:absolute;top:50%;left:50%;translate:-50% -50%'></image>
   </view>
 </view>
