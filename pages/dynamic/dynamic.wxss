@@ -1,1 +1,147 @@
-/* pages/dynamic/dynamic.wxss */
+.container{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #6666cc; 
+}
+.title-pic{
+  width: 160rpx;
+  height: 160rpx;
+  margin-left: 30rpx;
+}
+
+.title-text{
+  margin-bottom: 20rpx
+}
+.join-button{
+  width: 160rpx;
+  height: 60rpx;
+  background-color: greenyellow;
+  text-align: center;
+  border-radius: 10px
+
+}
+.head{
+  display: flex;
+  flex-direction: column;
+  background-color:  #6666cc;
+  width: 100%;
+  height: 480rpx;
+}
+.introduction{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.all-button{
+  display: flex;
+  flex-direction: row;
+}
+
+.share-button{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  text-align: center;
+  width: 160rpx;
+  height: 60rpx;
+  background-color: #f2f2f2;
+  border-radius: 10px
+}
+
+.share-pic{
+  height: 60rpx;
+  width: 40rpx;
+  margin-left: 20rpx
+}
+
+.join-share-text{
+  size: 12rpx;
+}
+
+.introduction-view{
+  height: 240rpx;
+  background-color: #2d2d86;
+  opacity: 20%;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+
+.introduction-border{
+  display: flex;
+  flex-direction: column;
+}
+
+.button-and-pic{
+  display: flex;
+  flex-direction: row;
+}
+
+.community-text{
+  display: flex;
+  margin-left: 12rpx;
+  margin-top: 20rpx;
+}
+
+.detail{
+  border-radius: 20px;
+  width: 100%;
+  min-height: 100%;
+  background-color: #FFFFFF;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.detail-and-footer{
+  width: 100%;
+  height: 100%
+}
+.diveder{
+  padding: 0 20px 0;
+  line-height: 1px;
+  border-left: 200px solid #ddd;
+  border-right: 200px solid #ddd;
+  text-align: center;
+
+}
+.floating-button{
+  border-radius: 50%;
+  position: fixed;
+  background-color: pink;
+  width: 26px;
+  height: 26px;
+  vertical-align: bottom;
+  bottom: 10px;
+  right: 10px;
+}
+.show-image{
+  
+}
+.each-dynamic{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0px auto;
+}
+.grid-image{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+}
+.diveder{
+  margin: 5px 5px;
+  padding: 0 20px 0;
+  line-height: 1px;
+  border: 1px solid #595959;
+  text-align: center;
+}
+.user-info{
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  overflow: hidden
+}

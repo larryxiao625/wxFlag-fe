@@ -1,2 +1,19 @@
 <!--pages/dynamic/dynamic.wxml-->
-<text>pages/dynamic/dynamic.wxml</text>
+<view class='detail'>
+  <block wx:for='{{dynamic}}'>
+    <view class='each-dynamic'>
+      <view class='user-info'>
+        <image src='http://localhost:7001/{{item.avatar}}' style='width:120rpx;height:120rpx;overflow:hidden'></image>
+        <view style='display:flex;flex-direction:column'>
+          <text>{{item.name}}</text>
+          <text>{{item.time}}</text>
+        </view>
+      </view>
+      <text class='dynamic-text'>{{item.comment}}</text>
+      <view class='grid-image'>
+        <image wx:for='{{item.imgPath}}' src='{{item}}' class='show-image' style='height:200rpx;width:200rpx;margin-bottom:10px;margin-right:20px;' mode='aspectFill'></image>
+      </view>
+      <view class='diveder'></view>
+    </view>
+  </block>
+</view>
