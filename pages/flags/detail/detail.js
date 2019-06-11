@@ -59,7 +59,10 @@ Page({
           console.log(imgPath);
           dynamic.push({
             comment: res.data.errmsg[i].comment,
-            imgPath: imgPath
+            imgPath: imgPath,
+            name: res.data.errmsg[i].username,
+            time: res.data.errmsg[i].time,
+            avatar: res.data.errmsg[i].avatar
           })
         };
         that.setData({
