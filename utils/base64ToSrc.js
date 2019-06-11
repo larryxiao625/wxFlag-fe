@@ -1,0 +1,1 @@
+const fsm = wx.getFileSystemManager();

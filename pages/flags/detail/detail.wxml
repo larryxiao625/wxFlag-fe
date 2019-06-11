@@ -1,6 +1,6 @@
 <!--pages/flags/detail/detail.wxml-->
 <view class='container'>
-  <scroll-view style='flex-grow:1'>
+  <scroll-view style='flex-grow:1;overflow:scroll' scroll-y='true'>
     <view class='head'>
       <view class='button-and-pic'>
         <image class='title-pic' src='../../../images/test.jpg' mode='scaleToFill'></image>
@@ -31,7 +31,12 @@
     </view>
     <view class='detail'>
       <block wx:for='{{dynamic}}'>
-        <view class=''>
+        <view class='each-dynamic'>
+          <text class='dynamic-text'>{{item.comment}}</text>
+          <view class='grid-image'>
+            <image wx:for='{{item.imgPath}}' src='{{item}}' class='show-image' style='height:200rpx;width:200rpx;margin-bottom:10px;margin-right:20px;' mode='aspectFill'></image>
+          </view>
+          <view class='diveder'></view>
         </view>
       </block>
     </view>

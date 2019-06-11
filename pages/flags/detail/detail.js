@@ -9,7 +9,8 @@ Page({
     name: "",
     progress: "",
     isSignToday: "",
-    description: ""
+    description: "",
+    dynamic:[]
   },
 
   /**
@@ -38,7 +39,36 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    var that=this;
+    var dynamic=new Array();
+    wx.request({
+      url: 'http://localhost:7001/api/v1/flag/getDynamic',
+      method:'POST',
+      data: {
+        UID: that.data.UID
+      },
+      success: res=>{
+        console.log(res.data.errmsg);
+        for(var i=0;i<res.data.errmsg.length;i++){
+          var imgPath = new Array();
+          var tempBase64List = JSON.parse(res.data.errmsg[i].images);
+          console.log(tempBase64List.length)
+          for (var j = 0; j < tempBase64List.length;j++){
+            imgPath.push("data:image/png;base64," + tempBase64List[j])
+          };
+          console.log(imgPath);
+          dynamic.push({
+            comment: res.data.errmsg[i].comment,
+            imgPath: imgPath
+          })
+        };
+        that.setData({
+          dynamic: dynamic
+        })
+        console.log(dynamic)
+      }
+    })
+    
   },
 
   /**

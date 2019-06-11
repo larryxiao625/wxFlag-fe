@@ -93,20 +93,18 @@ Page({
           })
         }
         console.log(that.data.imgPath);
-        var imgBase64=new Array();
         for(var i=0;i<tempFilePath.length;i++){
           fileSystemManager.readFile({
             filePath: tempFilePath[i],
             encoding: 'base64',
             success: res=>{
-              imgBase64.push(res.data)
+              that.setData({
+                imgBase64: that.data.imgBase64.concat(res.data),
+              })
+              console.log(that.data.imgBase64);
             }
           });
         }
-        console.log(imgBase64)
-        that.setData({
-          imgBase64: imgBase64,
-        })
       }
     })
   },
